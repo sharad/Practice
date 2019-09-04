@@ -3,6 +3,10 @@
 import time
 import pyosd
 
+# Check https://github.com/dmitrodem/libxosd
+# https://github.com/sharad/libxosd/blob/master/src/libxosd/xosd.c
+# https://github.com/sharad/libxosd/blob/master/src/osd_cat.c
+
 # p = pyosd.osd()
 # p = pyosd.osd(font = 'fixed')
 # p = pyosd.osd(font = "DejaVu Sans Mono:style=Book")
