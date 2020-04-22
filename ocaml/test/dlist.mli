@@ -1,5 +1,5 @@
 
-open Core.Std
+open Core
 
 type 'a t
 
@@ -14,8 +14,8 @@ val is_empty : 'a t -> bool
 (** Navigation using elements *)
 
 val first : 'a t -> 'a element option
-val next : 'a t -> 'a element option
-val prev : 'a t => 'a element option
+val next  : 'a element -> 'a element option
+val prev  : 'a element -> 'a element option
 val value : 'a element -> 'a
 
 (** Whole datastructure iteration *)
