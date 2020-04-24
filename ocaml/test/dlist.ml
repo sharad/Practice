@@ -1,7 +1,5 @@
 
-
 open Core
-
 
 type 'a element =
   { value : 'a;
@@ -12,6 +10,7 @@ type 'a element =
 type 'a t = 'a element option ref
 
 let create () = ref None
+
 let is_empty t = !t = None
 
 let value elt = elt.value
@@ -66,3 +65,8 @@ let find_el t ~f =
       else loop (next elt)
   in
   loop !t
+
+
+
+
+
